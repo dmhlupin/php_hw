@@ -6,7 +6,8 @@ $menu =
     ["href" => "about.php", "item" => "О нас"],
 ];
 
-function renderMenu($arr) {
+function renderMenu($arr) 
+{
     $resultStr = "<ul>";
     foreach($arr as $value) {
         $resultStr .= "<li><a href = {$value['href']}>{$value['item']}</li>";

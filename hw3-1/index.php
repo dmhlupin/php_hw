@@ -3,7 +3,8 @@
 # 1. С помощью цикла while вывести все числа в промежутке от 0 до 100, которые делятся на 3 без остатка.
 echo "Задание 1 <br><br>";
 $i = 0;
-while($i <= 100) {
+while($i <= 100) 
+{
     if ($i % 3 == 0) {
         echo "{$i} ,";
     }
@@ -21,7 +22,8 @@ while($i <= 100) {
 */
 echo "<br><br> Задание 2 <br><br>";
 
-function check($i){
+function check($i)
+{
     $str = "";
     if ($i == 0) {
         $str = " - ноль.";
@@ -86,7 +88,8 @@ $alfabet = [
 
 
 
-function translate($str, $alf){
+function translate($str, $alf)
+{
     $strArr = mb_str_split($str);
     $transStr = "";
 
@@ -114,7 +117,8 @@ echo translate($testString, $alfabet);
 */
 echo "<br><br> Задание 5 <br><br>";
 
-function deleteSpaces($str) {
+function deleteSpaces($str) 
+{
     return str_replace(" ", "_", $str);
 }
 
