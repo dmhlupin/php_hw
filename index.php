@@ -12,6 +12,7 @@ $images = mysqli_query($db, "SELECT * FROM `images` WHERE 1 ORDER BY views_count
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Галерея</title>
 </head>
 <body>
