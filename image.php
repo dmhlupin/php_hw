@@ -18,16 +18,24 @@ $image = $images->fetch_assoc(); //сделал через объектный с
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <?php if ($image != null):?>
-        <h2><?=$image['img_name']?></h2>
-        <img src="<?=$image['img_address'] . "/" . $image['img_name']?>" alt="<?=$image['img_name']?>"><br>
-        <p>Количество просмотров: <?=$image['views_count']?></p>
-        
-    <?php else:?>
-        <p>Нет такого изображения</p>
-    <?php endif;?>
+    <div class="wrapper">
+        <div class="header">
+            <a href="index.php"> <-- Назад</a>
+        </div>
+        <div class="img_container">
+            <?php if ($image != null):?>
+                <h2><?=$image['img_name']?></h2>
+                <img src="<?=$image['img_address'] . "/" . $image['img_name']?>" alt="<?=$image['img_name']?>"><br>
+                <p class="small_text">Количество просмотров: <?=$image['views_count']?></p>
+                
+            <?php else:?>
+                <p>Нет такого изображения</p>
+            <?php endif;?>
+        </div>
+    </div>
 </body>
 </html>
